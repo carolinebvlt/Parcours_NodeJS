@@ -10,9 +10,4 @@
   * *script 2* : var *__socket__* = io.connect(http://localhost:8080)  
 
 
-
-| action  | server.js | client.html |
-| ------------- | ------------- |
-| server -> client  | *callback* : *__socket__* . emit ( 'type' , 'content' ) | *script 2* : *__socket__* . on ( 'type' , fct ( var ) { } ) |
-| client -> server | *callback* : *__socket__* . on ( 'type' , fct ( var ) { } ) | *script 2* : *__socket__* . emit ( 'type' , 'content' ) |
-| server -> all clients | *callback* : *__socket__* . broadcast . emit ( 'type' , 'content' ) |  |
+![tableau](table_nodejs.png)
