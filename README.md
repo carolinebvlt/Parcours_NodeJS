@@ -21,3 +21,9 @@ server -> all clients | *callback* : *__socket__* . broadcast . emit ( 'type' , 
 | 1 Online      |        1        |      value |
 | Line 2        |        2        |      value |
 | 3 Online      |        3        |      value |
+
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
