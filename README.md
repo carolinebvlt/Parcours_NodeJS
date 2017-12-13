@@ -14,4 +14,10 @@
 - | - | -
 server -> client | *callback* : *__socket__* . emit ( 'type' , 'content' ) | *script 2* : *__socket__* . on ( 'type' , fct ( var ) { } )
 client -> server | *callback* : *__socket__* . on ( 'type' , fct ( var ) { } ) | *script 2* : *__socket__* . emit ( 'type' , 'content' )
-server -> all clients | *callback* : *__socket__* . broadcast . emit ( 'type' , 'content' ) | 
+server -> all clients | *callback* : *__socket__* . broadcast . emit ( 'type' , 'content' ) |
+
+| Header 1      |     2 header    |   header 3 |
+| ------------- |: -------------: | ---------: |
+| 1 Online      |        1        |      value |
+| Line 2        |        2        |      value |
+| 3 Online      |        3        |      value |
