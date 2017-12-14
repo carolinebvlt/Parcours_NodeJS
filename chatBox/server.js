@@ -10,10 +10,17 @@ app.get('/', function(rq, rs){
 });
 
 
-io.sockets.on('connection', function(socket){
+io.sockets.on('connection', function(socket, pseudo){
   console.log('1 connexion');
+
+  socket.on('newUser', function(pseudo){
+    socket.pseudo = pseudo;
+    console.log(socket.pseudo);
+  });
+
   socket.on('msg', function(msg){
-    console.log(msg);
+    console.log(socket.pseudo + ' : ' + msg);
+    socket.broadcast.emit('msg', msg);
   })
 });
 
