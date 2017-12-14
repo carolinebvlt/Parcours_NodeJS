@@ -1,0 +1,37 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  font-family: sans-serif;
+}
+h1{
+  font-size: 2.5em;
+  padding-top: 30px;
+  color: black;
+  text-shadow: darkorange 2px 2px;
+  text-align: center;
+}
+#chatZone{
+  background-color: white;
+  width: 80%;
+  min-height: 60vh;
+  margin: auto;
+  border-radius: 10px;
+  border: inset;
+}
+#formChat{
+  text-align: center;
+  margin-top: 40px;
+}
+#formChat input{
+  height: 30px;
+  border-radius: 5px;
+  border: outset darkorange;
+}
+#submitMsg{
+  width: 70px;
+  height: 35px;
+}
+#submitMsg:hover{
+  border: inset darkorange;
+}

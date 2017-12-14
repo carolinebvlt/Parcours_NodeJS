@@ -10,7 +10,7 @@
 
 * ### client.html
   * script 1 : src = '/socket.io/socket.io.js'
-  * *script 2* : var *__socket__* = io.connect(http://localhost:8080)  
+  * *script 2* : var *__socket__* = io.connect('http://localhost:8080')  
 
 ![tableau](table_nodejs.png)
 _______________
