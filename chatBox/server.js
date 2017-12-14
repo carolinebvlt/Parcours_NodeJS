@@ -20,7 +20,7 @@ io.sockets.on('connection', function(socket, pseudo){
 
   socket.on('msg', function(msg){
     console.log(socket.pseudo + ' : ' + msg);
-    socket.broadcast.emit('msg', msg);
+    socket.broadcast.emit('msg', {exp:socket.pseudo, msg:msg});
   })
 });
 

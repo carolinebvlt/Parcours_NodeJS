@@ -10,5 +10,7 @@ document.getElementById('submitMsg').addEventListener('click', function(event){
 });
 
 socket.on('msg', function(msg){
-  console.log(msg);
+  console.log(msg.exp);
+  console.log(msg.msg);
+  //document.getElementById('chatZone').innerHTML = "<p>"+ "<strong>" +  + "</strong>" +"</p>"
 })
