@@ -4,8 +4,7 @@
 ## socket.io
 
 * ### server.js
-  * var io = require('socket.io');
-  * io.listen(server);
+  * var io = require('socket.io').listen(server);
   * io.sockets.on( 'connection', *callback*(*__socket__*) {} );
 
 * ### client.html
