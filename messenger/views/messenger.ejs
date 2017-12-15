@@ -3,16 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="/css/chatBox.css">
-    <title>Messenger</title>
+    <title>Lovelace</title>
   </head>
   <body>
-    <h1>Messenger</h1>
-    <section id="chatZone">
+    <div class="mainContent">
+      <h1>ChatBox</h1>
+      <section id="chatZone">
+      </section>
+      <form action="/" method="post" id="formChat">
+        <input type="text" name="message" id="message" placeholder="Your message..." size="50" autofocus />
+        <input type="submit" id="submitMsg" value="Send" />
+      </form>
+    </div>
+    <section id="usersON" class="usersON">
+      hello
     </section>
-    <form action="/" method="post" id="formChat">
-      <input type="text" name="message" id="message" placeholder="Your message..." size="50" autofocus />
-      <input type="submit" id="submitMsg" value="Send" />
-    </form>
     <script type="text/javascript" src="/socket.io/socket.io.js"></script>
     <script type="text/javascript" src="/scripts/client.js"></script>
   </body>
