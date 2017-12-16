@@ -24,6 +24,7 @@ socket.on('userON', function(pseudo){
 function insertMsg(targetId, msg){
   var parent = document.getElementById(targetId);
   var p = document.createElement('p');
+  console.log(msg);
   p.innerHTML = "<strong>"+msg.exp+" : </strong>" + msg.content;
   parent.append(p);
 }

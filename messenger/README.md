@@ -1,10 +1,11 @@
 # Messenger
 _____
 
-## Fonctionnalités
+## Fonctionnalités (objectif)
 
-* ### Client
-
-  * chatbox générale
-  * affichage de tous les utilisateurs connectés
-  * click sur user name -> new window chatbox privée
+* General chatbox :
+  * log : user ON/OFF  
+* list of users ON :
+  * hover = short message
+  * click = private chatbox
+  * available/not
