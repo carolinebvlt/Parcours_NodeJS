@@ -16,12 +16,22 @@ io.sockets.on('connection', function(socket, pseudo){
   socket.on('newUser', function(pseudo){
     socket.pseudo = pseudo;
     socket.broadcast.emit('userON', pseudo);
+
     fs.readFile('db/test.json','utf8' , (err, content) => {
       if (err) throw err;
-      console.log(content);
-      console.log('________');
+      console.log("jsonBrut: "+content);
+      console.log('---------');
       var data = JSON.parse(content);
-      console.log(data.name);
+      console.log("dataParsed: "+data);
+      console.log('---------');
+      var iMax = data.length - 1;
+      var newI = data.length;
+      data[newI] = pseudo;
+      console.log('newData: '+data);
+      fs.writeFile('db/test.json', JSON.stringify(data), function(err){
+        if(err) throw err;
+        console.log('saved!');
+      })
     });
   });
 
