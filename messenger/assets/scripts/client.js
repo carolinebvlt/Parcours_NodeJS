@@ -7,7 +7,6 @@ document.getElementById('submitMsg').addEventListener('click', function(event){
   event.preventDefault();
   msg = document.getElementById('message').value;
   socket.emit('msg', msg);
-  // console.log(msg);
   insertOwnMsg('chatZone',pseudo, msg);
   document.getElementById('message').value = '';
 });
