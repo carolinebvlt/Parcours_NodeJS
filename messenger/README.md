@@ -1,4 +1,5 @@
 # Messenger
+__Suite dans "PersRepo_Desktop"__  
 _____
 
 ## Fonctionnalités (objectif)
